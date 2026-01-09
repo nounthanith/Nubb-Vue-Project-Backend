@@ -31,5 +31,7 @@ app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 app.use("/api/auth", userRouter);
 app.use("/api/category", categoryRouter);
 app.use("/api/product", productRouter);
+app.use("/api/categories", categoryRouter);
+app.use("/api/products", productRouter);
 
 module.exports = app;
