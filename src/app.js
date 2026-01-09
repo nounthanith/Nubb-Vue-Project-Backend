@@ -26,6 +26,10 @@ app.use((req, _res, next) => {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is running")
+})
+
 app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 app.use("/api/auth", userRouter);
