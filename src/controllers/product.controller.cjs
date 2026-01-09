@@ -1,5 +1,5 @@
-const Product = require("../models/product.model");
-const Category = require("../models/category.model");
+const Product = require("../models/product.model.cjs");
+const Category = require("../models/category.model.cjs");
 
 exports.createProduct = async (req, res) => {
 	try {

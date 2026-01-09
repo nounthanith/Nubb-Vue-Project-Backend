@@ -1,8 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const userRouter = require("./routes/user.route");
-const categoryRouter = require("./routes/category.route");
-const productRouter = require("./routes/product.route");
+const userRouter = require("./routes/user.route.cjs");
+const categoryRouter = require("./routes/category.route.cjs");
+const productRouter = require("./routes/product.route.cjs");
 const cors = require("cors");
 const path = require("path");
 

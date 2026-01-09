@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const categoryController = require("../controllers/category.controller");
+const categoryController = require("../controllers/category.controller.cjs");
 
-const { protect } = require("../middlewares/auth");
+const { protect } = require("../middlewares/auth.cjs");
 
 router.post("/", protect, categoryController.createCategory);
 

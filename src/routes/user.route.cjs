@@ -5,8 +5,8 @@ const {
 	logout,
 	getProfile,
 	getAllUsers,
-} = require("../controllers/user.controller");
-const { protect } = require("../middlewares/auth");
+} = require("../controllers/user.controller.cjs");
+const { protect } = require("../middlewares/auth.cjs");
 
 const router = express.Router();
 
